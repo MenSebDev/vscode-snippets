@@ -1,0 +1,63 @@
+{
+    "name": "gtest-snippets",
+    "displayName": "GTest Snippets",
+    "description": "Google Test snippets for VS Code.",
+    "version": "1.0.0",
+    "publisher": "mensebdev",
+    "author": {
+        "name": "Sébastien Menard",
+        "email": "contact@menseb.dev",
+        "url": "https://menseb.dev/"
+    },
+    "homepage": "https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/cpp/gtest/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MenSebDev/vscode-snippets.git",
+        "directory": "snippets/cpp/gtest"
+    },
+    "bugs": {
+        "email": "contact@menseb.dev",
+        "url": "https://github.com/MenSebDev/vscode-snippets/issues"
+    },
+    "icon": "icon.ico",
+    "galleryBanner": {
+        "color": "#515151",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.8.0"
+    },
+    "license": "MIT",
+    "pricing": "Free",
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "vscode",
+        "snippets",
+        "cpp",
+        "c++",
+        "gtest",
+        "google test"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "asserts.json"
+            },
+            {
+                "language": "cpp",
+                "path": "controls.json"
+            },
+            {
+                "language": "cpp",
+                "path": "expects.json"
+            },
+            {
+                "language": "cpp",
+                "path": "macros.json"
+            }
+        ]
+    }
+}

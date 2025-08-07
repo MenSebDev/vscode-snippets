@@ -1,0 +1,247 @@
+{
+    "GTest ASSERT_THAT": {
+        "prefix": "gtaTHAT",
+        "body": [
+            "ASSERT_THAT(${1:value}, ${2:matcher});$0"
+        ],
+        "description": "Checks that `value` matches the matcher `matcher`."
+    },
+    "GTest ASSERT_TRUE": {
+        "prefix": "gtaTRUE",
+        "body": [
+            "ASSERT_TRUE(${1:condition});$0"
+        ],
+        "description": "Checks that `condition` is true."
+    },
+    "GTest ASSERT_FALSE": {
+        "prefix": "gtaFALSE",
+        "body": [
+            "ASSERT_FALSE(${1:condition});$0"
+        ],
+        "description": "Checks that `condition` is false."
+    },
+    "GTest ASSERT_EQ": {
+        "prefix": "gtaEQ",
+        "body": [
+            "ASSERT_EQ(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 == val2`."
+    },
+    "GTest ASSERT_NE": {
+        "prefix": "gtaNE",
+        "body": [
+            "ASSERT_NE(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 != val2`."
+    },
+    "GTest ASSERT_LT": {
+        "prefix": "gtaLT",
+        "body": [
+            "ASSERT_LT(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 < val2`."
+    },
+    "GTest ASSERT_LE": {
+        "prefix": "gtaLE",
+        "body": [
+            "ASSERT_LE(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 <= val2`."
+    },
+    "GTest ASSERT_GT": {
+        "prefix": "gtaGT",
+        "body": [
+            "ASSERT_GT(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 > val2`."
+    },
+    "GTest ASSERT_GE": {
+        "prefix": "gtaGE",
+        "body": [
+            "ASSERT_GE(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that `val1 >= val2`."
+    },
+    "GTest ASSERT_STREQ": {
+        "prefix": "gtaSTREQ",
+        "body": [
+            "ASSERT_STREQ(${1:str1}, ${2:str2});$0"
+        ],
+        "description": "Checks that the C-strings `str1` and `str2` are equal."
+    },
+    "GTest ASSERT_STRNE": {
+        "prefix": "gtaSTRNE",
+        "body": [
+            "ASSERT_STRNE(${1:str1}, ${2:str2});$0"
+        ],
+        "description": "Checks that the C-strings `str1` and `str2` are not equal."
+    },
+    "GTest ASSERT_STRCASEEQ": {
+        "prefix": "gtaSTRCASEEQ",
+        "body": [
+            "ASSERT_STRCASEEQ(${1:str1}, ${2:str2});$0"
+        ],
+        "description": "Checks that the C-strings `str1` and `str2` are equal, ignoring case."
+    },
+    "GTest ASSERT_STRCASENE": {
+        "prefix": "gtaSTRCASENE",
+        "body": [
+            "ASSERT_STRCASENE(${1:str1}, ${2:str2});$0"
+        ],
+        "description": "Checks that the C-strings `str1` and `str2` are not equal, ignoring case."
+    },
+    "GTest ASSERT_FLOAT_EQ": {
+        "prefix": "gtaFEQ",
+        "body": [
+            "ASSERT_FLOAT_EQ(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that the floats `val1` and `val2` are almost equal."
+    },
+    "GTest ASSERT_DOUBLE_EQ": {
+        "prefix": "gtaDEQ",
+        "body": [
+            "ASSERT_DOUBLE_EQ(${1:val1}, ${2:val2});$0"
+        ],
+        "description": "Checks that the doubles `val1` and `val2` are almost equal."
+    },
+    "GTest ASSERT_NEAR": {
+        "prefix": "gtaNEAR",
+        "body": [
+            "ASSERT_NEAR(${1:val1}, ${2:val2}, ${3:abs_error});$0"
+        ],
+        "description": "Checks that `|val1 - val2| <= abs_error`."
+    },
+    "GTest ASSERT_THROW": {
+        "prefix": "gtaTHROW",
+        "body": [
+            "ASSERT_THROW(${1:statement}, ${2:exception_type});$0"
+        ],
+        "description": "Checks that `statement` throws an exception of type `exception_type`."
+    },
+    "GTest ASSERT_ANY_THROW": {
+        "prefix": "gtaANYTHROW",
+        "body": [
+            "ASSERT_ANY_THROW(${1:statement});$0"
+        ],
+        "description": "Checks that `statement` throws any exception."
+    },
+    "GTest ASSERT_NO_THROW": {
+        "prefix": "gtaNOTHROW",
+        "body": [
+            "ASSERT_NO_THROW(${1:statement});$0"
+        ],
+        "description": "Checks that `statement` does not throw any exception."
+    },
+    "GTest ASSERT_PRED1": {
+        "prefix": "gtaP1",
+        "body": [
+            "ASSERT_PRED1(${1:pred}, ${2:v1});$0"
+        ],
+        "description": "Checks the unary predicate `pred` on `v1`."
+    },
+    "GTest ASSERT_PRED2": {
+        "prefix": "gtaP2",
+        "body": [
+            "ASSERT_PRED2(${1:pred}, ${2:v1}, ${3:v2});$0"
+        ],
+        "description": "Checks the binary predicate `pred` on `v1, v2`."
+    },
+    "GTest ASSERT_PRED3": {
+        "prefix": "gtaP3",
+        "body": [
+            "ASSERT_PRED3(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3});$0"
+        ],
+        "description": "Checks the ternary predicate `pred` on `v1, v2, v3`."
+    },
+    "GTest ASSERT_PRED4": {
+        "prefix": "gtaP4",
+        "body": [
+            "ASSERT_PRED4(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0"
+        ],
+        "description": "Checks the 4-ary predicate `pred` on `v1, v2, v3, v4`."
+    },
+    "GTest ASSERT_PRED5": {
+        "prefix": "gtaP5",
+        "body": [
+            "ASSERT_PRED5(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0"
+        ],
+        "description": "Checks the 5-ary predicate `pred` on `v1, v2, v3, v4, v5`."
+    },
+    "GTest ASSERT_PRED_FORMAT1": {
+        "prefix": "gtaPF1",
+        "body": [
+            "ASSERT_PRED_FORMAT1(${1:fmt}, ${2:v1});$0"
+        ],
+        "description": "Checks the user-defined formatter `fmt` for `v1`."
+    },
+    "GTest ASSERT_PRED_FORMAT2": {
+        "prefix": "gtaPF2",
+        "body": [
+            "ASSERT_PRED_FORMAT2(${1:fmt}, ${2:v1}, ${3:v2});$0"
+        ],
+        "description": "Checks the user-defined formatter `fmt` for `v1, v2`."
+    },
+    "GTest ASSERT_PRED_FORMAT3": {
+        "prefix": "gtaPF3",
+        "body": [
+            "ASSERT_PRED_FORMAT3(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3});$0"
+        ],
+        "description": "Checks the user-defined formatter `fmt` for `v1, v2, v3`."
+    },
+    "GTest ASSERT_PRED_FORMAT4": {
+        "prefix": "gtaPF4",
+        "body": [
+            "ASSERT_PRED_FORMAT4(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0"
+        ],
+        "description": "Checks the user-defined formatter `fmt` for `v1, v2, v3, v4`."
+    },
+    "GTest ASSERT_PRED_FORMAT5": {
+        "prefix": "gtaPF5",
+        "body": [
+            "ASSERT_PRED_FORMAT5(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0"
+        ],
+        "description": "Checks the user-defined formatter `fmt` for `v1, v2, v3, v4, v5`."
+    },
+    "GTest ASSERT_HRESULT_SUCCEEDED": {
+        "prefix": "gtaHS",
+        "body": [
+            "ASSERT_HRESULT_SUCCEEDED(${1:expr});$0"
+        ],
+        "description": "Checks that the HRESULT `expr` indicates success (SUCCEEDED)."
+    },
+    "GTest ASSERT_HRESULT_FAILED": {
+        "prefix": "gtaHF",
+        "body": [
+            "ASSERT_HRESULT_FAILED(${1:expr});$0"
+        ],
+        "description": "Checks that the HRESULT `expr` indicates failure (FAILED)."
+    },
+    "GTest ASSERT_DEATH": {
+        "prefix": "gtaDEATH",
+        "body": [
+            "ASSERT_DEATH(${1:statement}, ${2:regex});$0"
+        ],
+        "description": "Checks that `statement` causes the process to die and its stderr matches `regex`."
+    },
+    "GTest ASSERT_DEATH_IF_SUPPORTED": {
+        "prefix": "gtaDIS",
+        "body": [
+            "ASSERT_DEATH_IF_SUPPORTED(${1:statement}, ${2:regex});$0"
+        ],
+        "description": "Checks death as in ASSERT_DEATH, but skips on unsupported platforms."
+    },
+    "GTest ASSERT_DEBUG_DEATH": {
+        "prefix": "gtaDDEATH",
+        "body": [
+            "ASSERT_DEBUG_DEATH(${1:statement}, ${2:regex});$0"
+        ],
+        "description": "Checks death only in debug mode; behaves like ASSERT_DEATH otherwise."
+    },
+    "GTest ASSERT_EXIT": {
+        "prefix": "gtaEXIT",
+        "body": [
+            "ASSERT_EXIT(${1:statement}, ${2:predicate}, ${3:regex});$0"
+        ],
+        "description": "Checks that `statement` exits and that `predicate` and `regex` match its exit code and output."
+    }
+}

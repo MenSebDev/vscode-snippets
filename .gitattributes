@@ -1,0 +1,18 @@
+# Normalization of text files in LF.
+* text eol=lf
+
+# Normalization of batch files to CRLF.
+*.bat text eol=crlf
+
+# Normalization of Shell Files in LF.
+*.sh text eol=lf
+
+# Normalization of markdown files to text.
+*.md text
+
+# Normalization of image files in binary.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

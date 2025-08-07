@@ -1,0 +1,30 @@
+{
+    "GTest SUCCEED": {
+        "prefix": "gtcSUCCEED",
+        "body": [
+            "SUCCEED();$0"
+        ],
+        "description": "Explicitly signals that the current test has succeeded."
+    },
+    "GTest FAIL": {
+        "prefix": "gtcFAIL",
+        "body": [
+            "FAIL();$0"
+        ],
+        "description": "Generates a fatal failure and aborts the current test immediately."
+    },
+    "GTest ADD_FAILURE": {
+        "prefix": "gtcAF",
+        "body": [
+            "ADD_FAILURE();$0"
+        ],
+        "description": "Records a non-fatal failure at the current source location."
+    },
+    "GTest ADD_FAILURE_AT": {
+        "prefix": "gtcAFA",
+        "body": [
+            "ADD_FAILURE_AT(${1:file}, ${2:line});$0"
+        ],
+        "description": "Records a non-fatal failure at the specified file and line."
+    }
+}

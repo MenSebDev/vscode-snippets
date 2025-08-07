@@ -1,0 +1,32 @@
+<svg version="2" viewBox="-12 -12 24 24" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <line id="side" y1="2" y2="-2" />
+        <path id="corner" d="M-10 -5 v-5 h5 h-5 z" />
+    </defs>
+
+    <g fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#0065A9">
+            <use href="#corner" />
+            <use href="#corner" transform="rotate(90)" />
+            <use href="#corner" transform="rotate(180)" />
+            <use href="#corner" transform="rotate(-90)" />
+
+            <use href="#side" x="-10" />
+            <use href="#side" x="-10" transform="rotate(90)" />
+            <use href="#side" x="-10" transform="rotate(-90)" />
+        </g>
+
+        <g stroke="#e87d1a">
+            <line x1="-7" y1="-3.5" x2="4" y2="-3.5" />
+            <line x1="-7" y1="3.5" x2="4" y2="3.5" />
+        </g>
+
+        <g stroke="#079a7c">
+            <line x1="-7" y1="-7" x2="7" y2="-7" />
+            <line x1="-7" y1="0" x2="0" y2="0" />
+            <line x1="-7" y1="7" x2="7" y2="7" />
+        </g>
+
+        <path stroke="#0098FF" stroke-width="1" d="M3 0 h8 l-3 -3 l3 3 l-3 3 l3 -3 z" />
+    </g>
+</svg>

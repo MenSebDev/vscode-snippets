@@ -1,0 +1,47 @@
+{
+    "name": "cpp-snippets-pack",
+    "displayName": "C++ Extension Pack",
+    "description": "Useful C++ snippet extensions for VS Code.",
+    "homepage": "https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/cpp/README.md",
+    "version": "1.0.0",
+    "publisher": "mensebdev",
+    "license": "MIT",
+    "pricing": "Free",
+    "engines": {
+        "vscode": "^1.8.0"
+    },
+    "author": {
+        "name": "Sébastien Menard",
+        "email": "contact@menseb.dev",
+        "url": "https://menseb.dev/"
+    },
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#515151",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MenSebDev/vscode-snippets.git",
+        "directory": "snippets/cpp"
+    },
+    "bugs": {
+        "email": "contact@menseb.dev",
+        "url": "https://github.com/MenSebDev/vscode-snippets/issues"
+    },
+    "categories": [
+        "Extension Packs",
+        "Snippets"
+    ],
+    "keywords": [
+        "vscode",
+        "snippets",
+        "cpp",
+        "c++",
+        "gtest"
+    ],
+    "extensionPack": [
+        "mensebdev.cpp-snippets",
+        "mensebdev.gtest-snippets"
+    ]
+}
