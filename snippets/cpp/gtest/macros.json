@@ -1,0 +1,142 @@
+{
+    "GTest TEST": {
+        "prefix": "gtmTEST",
+        "body": [
+            "TEST(${1:TestSuiteName}, ${2:TestName});$0"
+        ],
+        "description": "Defines a regular test case named `TestName` in the test suite `TestSuiteName`."
+    },
+    "GTest TEST_F": {
+        "prefix": "gtmTF",
+        "body": [
+            "TEST_F(${1:TestFixtureName}, ${2:TestName});$0"
+        ],
+        "description": "Defines a test named `TestName` that uses the fixture `TestFixtureName`."
+    },
+    "GTest TEST_P": {
+        "prefix": "gtmTP",
+        "body": [
+            "TEST_P(${1:TestFixtureName}, ${2:TestName});$0"
+        ],
+        "description": "Defines a parameterized test named `TestName` in the fixture `TestFixtureName`."
+    },
+    "GTest INSTANTIATE_TEST_SUITE_P": {
+        "prefix": "gtmITSP",
+        "body": [
+            "INSTANTIATE_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:param_generator});$0"
+        ],
+        "description": "Instantiates the parameterized test suite `TestSuiteName` with the given `param_generator` under the instantiation name `InstantiationName`."
+    },
+    "GTest INSTANTIATE_TEST_SUITE_P (generator)": {
+        "prefix": "gtmITSPg",
+        "body": [
+            "INSTANTIATE_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:param_generator}, ${4:NameGenerator});$0"
+        ],
+        "description": "Instantiates the parameterized test suite `TestSuiteName` with a custom `NameGenerator` to control test name suffixes."
+    },
+    "GTest GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST": {
+        "prefix": "gtmGAUPT",
+        "body": [
+            "GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(${1:TestSuiteName});$0"
+        ],
+        "description": "Allows declaration of a parameterized test suite `TestSuiteName` without instantiation."
+    },
+    "GTest TYPED_TEST": {
+        "prefix": "gtmTT",
+        "body": [
+            "TYPED_TEST(${1:TestSuiteName}, ${2:TestName});$0"
+        ],
+        "description": "Defines and runs a typed test `TestName` in the typed test suite `TestSuiteName`."
+    },
+    "GTest TYPED_TEST_SUITE": {
+        "prefix": "gtmTTS",
+        "body": [
+            "TYPED_TEST_SUITE(${1:TestFixtureName}, ${2:Types});$0"
+        ],
+        "description": "Defines a typed test suite `TestFixtureName` parameterized by `Types`."
+    },
+    "GTest TYPED_TEST_SUITE (generator)": {
+        "prefix": "gtmTTSg",
+        "body": [
+            "TYPED_TEST_SUITE(${1:TestFixtureName}, ${2:Types}, ${3:NameGenerator});$0"
+        ],
+        "description": "Defines a typed test suite `TestFixtureName` parameterized by `Types`, using `NameGenerator` to customize test name suffixes."
+    },
+    "GTest TYPED_TEST_SUITE_P": {
+        "prefix": "gtmTTSP",
+        "body": [
+            "TYPED_TEST_SUITE_P(${1:TestFixtureName});$0"
+        ],
+        "description": "Registers a typed test suite pattern `TestFixtureName` for later instantiation."
+    },
+    "GTest TYPED_TEST_P": {
+        "prefix": "gtmTTP",
+        "body": [
+            "TYPED_TEST_P(${1:TestSuiteName}, ${2:TestName});$0"
+        ],
+        "description": "Defines a typed test pattern `TestName` for the typed test suite `TestSuiteName`."
+    },
+    "GTest REGISTER_TYPED_TEST_SUITE_P": {
+        "prefix": "gtmRTSP",
+        "body": [
+            "REGISTER_TYPED_TEST_SUITE_P(${1:TestSuiteName}, ${2:TestName1}${3:, ${4:TestName2}});$0"
+        ],
+        "description": "Registers one or more typed test names (`TestName1`, `TestName2`, …) with the typed test suite pattern `TestSuiteName`."
+    },
+    "GTest INSTANTIATE_TYPED_TEST_SUITE_P": {
+        "prefix": "gtmITTSP",
+        "body": [
+            "INSTANTIATE_TYPED_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:Types});$0"
+        ],
+        "description": "Instantiates the typed test suite pattern `TestSuiteName` with the list of `Types` under the name `InstantiationName`."
+    },
+    "GTest FRIEND_TEST": {
+        "prefix": "gtmFT",
+        "body": [
+            "FRIEND_TEST(${1:TestSuiteName}, ${2:TestName});$0"
+        ],
+        "description": "Declares `TestName` in `TestSuiteName` as a friend of its fixture class to grant access to private members."
+    },
+    "GTest SCOPED_TRACE": {
+        "prefix": "gtmST",
+        "body": [
+            "SCOPED_TRACE(${1:message});$0"
+        ],
+        "description": "Inserts a trace message that will be printed if a failure occurs in the current scope."
+    },
+    "GTest GTEST_SKIP": {
+        "prefix": "gtmGS",
+        "body": [
+            "GTEST_SKIP();$0"
+        ],
+        "description": "Skips the remainder of the current test at runtime."
+    },
+    "GTest MOCK_METHOD": {
+        "prefix": "gtmMM",
+        "body": [
+            "MOCK_METHOD(${1:return_type}, ${2:method_name}, (${3:args}));$0"
+        ],
+        "description": "Defines a mock method `method_name` with return type `return_type` and arguments `args`."
+    },
+    "GTest MOCK_METHOD (specs)": {
+        "prefix": "gtmMMs",
+        "body": [
+            "MOCK_METHOD(${1:return_type}, ${2:method_name}, (${3:args}), (${4:specs}));$0"
+        ],
+        "description": "Defines a mock method `method_name` with return type `return_type`, arguments `args`, and qualifiers `specs`."
+    },
+    "GTest EXPECT_CALL": {
+        "prefix": "gtmEC",
+        "body": [
+            "EXPECT_CALL(${1:mock_object}, ${2:method_name}(${3:matchers}))$0"
+        ],
+        "description": "Creates an expectation that the method `method_name(matchers)` will be called on `mock_object`."
+    },
+    "GTest ON_CALL": {
+        "prefix": "gtmOC",
+        "body": [
+            "ON_CALL(${1:mock_object}, ${2:method_name}(${3:matchers}))$4.WillByDefault(${5:action});$0"
+        ],
+        "description": "Specifies default behavior `action` for calls to `method_name(matchers)` on `mock_object`."
+    }
+}
