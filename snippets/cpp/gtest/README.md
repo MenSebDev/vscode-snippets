@@ -2,7 +2,6 @@
   <img
     alt="logo"
     src="logo.png"
-    width="250"
   />
   <h1>
     snippets-gtest
