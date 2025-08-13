@@ -1,8 +1,8 @@
 {
-    "name": "gtest-snippets",
-    "displayName": "GTest Snippets",
-    "description": "Google Test snippets for VS Code.",
-    "version": "1.0.0",
+    "name": "snippets-gtest",
+    "displayName": "Snippets GoogleTest",
+    "description": "GoogleTest snippets for VS Code.",
+    "version": "1.0.1",
     "publisher": "mensebdev",
     "author": {
         "name": "Sébastien Menard",
@@ -19,9 +19,15 @@
         "email": "contact@menseb.dev",
         "url": "https://github.com/MenSebDev/vscode-snippets/issues"
     },
-    "icon": "icon.ico",
+    "icon": "logo.png",
+    "files": [
+        "CHANGELOG.md",
+        "LICENSE",
+        "logo.png",
+        "snippets/**/*.json"
+    ],
     "galleryBanner": {
-        "color": "#515151",
+        "color": "#1e1e1e",
         "theme": "dark"
     },
     "engines": {
@@ -44,19 +50,19 @@
         "snippets": [
             {
                 "language": "cpp",
-                "path": "asserts.json"
+                "path": "snippets/asserts.json"
             },
             {
                 "language": "cpp",
-                "path": "controls.json"
+                "path": "snippets/controls.json"
             },
             {
                 "language": "cpp",
-                "path": "expects.json"
+                "path": "snippets/expects.json"
             },
             {
                 "language": "cpp",
-                "path": "macros.json"
+                "path": "snippets/macros.json"
             }
         ]
     }
