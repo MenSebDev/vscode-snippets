@@ -1,0 +1,22 @@
+---
+# https://github.com/MenSebDev/.github/tree/main/.github/workflows/stale.yaml
+# Close stale issues and pull requests.
+
+name: Stale
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # Run daily at 2 AM ET (07:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  check-issues-and-PRs:
+    uses: MenSebDev/.github/.github/workflows/stale.yaml@main
+    with:
+      days-before-stale: 30
+      days-before-close: 7
