@@ -1,0 +1,17 @@
+---
+# https://github.com/MenSebDev/.github/tree/main/.github/workflows/semantic.yaml
+# Validate the pull request title.
+
+name: Semantic
+
+on:
+  pull_request_target:
+    types: [opened, edited, reopened]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  check-title-PR:
+    if: github.event.action != 'edited' || github.event.changes.title
+    uses: MenSebDev/.github/.github/workflows/semantic.yaml@main
