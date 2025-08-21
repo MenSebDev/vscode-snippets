@@ -15,3 +15,12 @@
 <hr>
 
 ## Table of contents <!-- omit from toc -->
+
+- [List of Snippets](#list-of-snippets)
+  - [Macros](#macros)
+
+## List of Snippets
+
+Here is the list of snippets included in this collection.
+
+### Macros
