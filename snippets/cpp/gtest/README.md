@@ -31,423 +31,353 @@ Here is the list of snippets included in this collection.
 
 ---
 
-**Prefix:** `gtaTHAT`
-
+**Prefix:** `gtaTHAT`  
+**Description:** Checks that `value` matches the matcher `matcher`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_THAT(${1:value}, ${2:matcher});$0
 ```
 
-**Description:** Checks that `value` matches the matcher `matcher`.
-
 ---
 
-**Prefix:** `gtaTRUE`
-
+**Prefix:** `gtaTRUE`  
+**Description:** Checks that `condition` is true.  
 **Output:**
 
-```sh
+```txt
 ASSERT_TRUE(${1:condition});$0
 ```
 
-**Description:** Checks that `condition` is true.
-
 ---
 
-**Prefix:** `gtaFALSE`
-
+**Prefix:** `gtaFALSE`  
+**Description:** Checks that `condition` is false.  
 **Output:**
 
-```sh
+```txt
 ASSERT_FALSE(${1:condition});$0
 ```
 
-**Description:** Checks that `condition` is false.
-
 ---
 
-**Prefix:** `gtaEQ`
-
+**Prefix:** `gtaEQ`  
+**Description:** Checks that `val1 == val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 == val2`.
-
 ---
 
-**Prefix:** `gtaNE`
-
+**Prefix:** `gtaNE`  
+**Description:** Checks that `val1 != val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_NE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 != val2`.
-
 ---
 
-**Prefix:** `gtaLT`
-
+**Prefix:** `gtaLT`  
+**Description:** Checks that `val1 < val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_LT(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 < val2`.
-
 ---
 
-**Prefix:** `gtaLE`
-
+**Prefix:** `gtaLE`  
+**Description:** Checks that `val1 <= val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_LE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 <= val2`.
-
 ---
 
-**Prefix:** `gtaGT`
-
+**Prefix:** `gtaGT`  
+**Description:** Checks that `val1 > val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_GT(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 > val2`.
-
 ---
 
-**Prefix:** `gtaGE`
-
+**Prefix:** `gtaGE`  
+**Description:** Checks that `val1 >= val2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_GE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 >= val2`.
-
 ---
 
-**Prefix:** `gtaSTREQ`
-
+**Prefix:** `gtaSTREQ`  
+**Description:** Checks that the C-strings `str1` and `str2` are equal.  
 **Output:**
 
-```sh
+```txt
 ASSERT_STREQ(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that the C-strings `str1` and `str2` are equal.
-
 ---
 
-**Prefix:** `gtaSTRNE`
-
+**Prefix:** `gtaSTRNE`  
+**Description:** Checks that the C-strings `str1` and `str2` are not equal.  
 **Output:**
 
-```sh
+```txt
 ASSERT_STRNE(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that the C-strings `str1` and `str2` are not equal.
-
 ---
 
-**Prefix:** `gtaSTRCASEEQ`
-
+**Prefix:** `gtaSTRCASEEQ`  
+**Description:** Checks that the C-strings `str1` and `str2` are equal, ignoring case.  
 **Output:**
 
-```sh
+```txt
 ASSERT_STRCASEEQ(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that the C-strings `str1` and `str2` are equal, ignoring case.
-
 ---
 
-**Prefix:** `gtaSTRCASENE`
-
+**Prefix:** `gtaSTRCASENE`  
+**Description:** Checks that the C-strings `str1` and `str2` are not equal, ignoring case.  
 **Output:**
 
-```sh
+```txt
 ASSERT_STRCASENE(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that the C-strings `str1` and `str2` are not equal, ignoring case.
-
 ---
 
-**Prefix:** `gtaFEQ`
-
+**Prefix:** `gtaFEQ`  
+**Description:** Checks that the floats `val1` and `val2` are almost equal.  
 **Output:**
 
-```sh
+```txt
 ASSERT_FLOAT_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that the floats `val1` and `val2` are almost equal.
-
 ---
 
-**Prefix:** `gtaDEQ`
-
+**Prefix:** `gtaDEQ`  
+**Description:** Checks that the doubles `val1` and `val2` are almost equal.  
 **Output:**
 
-```sh
+```txt
 ASSERT_DOUBLE_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that the doubles `val1` and `val2` are almost equal.
-
 ---
 
-**Prefix:** `gtaNEAR`
-
+**Prefix:** `gtaNEAR`  
+**Description:** Checks that `|val1 - val2| <= abs_error`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_NEAR(${1:val1}, ${2:val2}, ${3:abs_error});$0
 ```
 
-**Description:** Checks that `|val1 - val2| <= abs_error`.
-
 ---
 
-**Prefix:** `gtaTHROW`
-
+**Prefix:** `gtaTHROW`  
+**Description:** Checks that `statement` throws an exception of type `exception_type`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_THROW(${1:statement}, ${2:exception_type});$0
 ```
 
-**Description:** Checks that `statement` throws an exception of type `exception_type`.
-
 ---
 
-**Prefix:** `gtaANYTHROW`
-
+**Prefix:** `gtaANYTHROW`  
+**Description:** Checks that `statement` throws any exception.  
 **Output:**
 
-```sh
+```txt
 ASSERT_ANY_THROW(${1:statement});$0
 ```
 
-**Description:** Checks that `statement` throws any exception.
-
 ---
 
-**Prefix:** `gtaNOTHROW`
-
+**Prefix:** `gtaNOTHROW`  
+**Description:** Checks that `statement` does not throw any exception.  
 **Output:**
 
-```sh
+```txt
 ASSERT_NO_THROW(${1:statement});$0
 ```
 
-**Description:** Checks that `statement` does not throw any exception.
-
 ---
 
-**Prefix:** `gtaP1`
-
+**Prefix:** `gtaP1`  
+**Description:** Checks the unary predicate `pred` on `v1`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED1(${1:pred}, ${2:v1});$0
 ```
 
-**Description:** Checks the unary predicate `pred` on `v1`.
-
 ---
 
-**Prefix:** `gtaP2`
-
+**Prefix:** `gtaP2`  
+**Description:** Checks the binary predicate `pred` on `v1, v2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED2(${1:pred}, ${2:v1}, ${3:v2});$0
 ```
 
-**Description:** Checks the binary predicate `pred` on `v1, v2`.
-
 ---
 
-**Prefix:** `gtaP3`
-
+**Prefix:** `gtaP3`  
+**Description:** Checks the ternary predicate `pred` on `v1, v2, v3`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED3(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3});$0
 ```
 
-**Description:** Checks the ternary predicate `pred` on `v1, v2, v3`.
-
 ---
 
-**Prefix:** `gtaP4`
-
+**Prefix:** `gtaP4`  
+**Description:** Checks the 4-ary predicate `pred` on `v1, v2, v3, v4`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED4(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0
 ```
 
-**Description:** Checks the 4-ary predicate `pred` on `v1, v2, v3, v4`.
-
 ---
 
-**Prefix:** `gtaP5`
-
+**Prefix:** `gtaP5`  
+**Description:** Checks the 5-ary predicate `pred` on `v1, v2, v3, v4, v5`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED5(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0
 ```
 
-**Description:** Checks the 5-ary predicate `pred` on `v1, v2, v3, v4, v5`.
-
 ---
 
-**Prefix:** `gtaPF1`
-
+**Prefix:** `gtaPF1`  
+**Description:** Checks the user-defined formatter `fmt` for `v1`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED_FORMAT1(${1:fmt}, ${2:v1});$0
 ```
 
-**Description:** Checks the user-defined formatter `fmt` for `v1`.
-
 ---
 
-**Prefix:** `gtaPF2`
-
+**Prefix:** `gtaPF2`  
+**Description:** Checks the user-defined formatter `fmt` for `v1, v2`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED_FORMAT2(${1:fmt}, ${2:v1}, ${3:v2});$0
 ```
 
-**Description:** Checks the user-defined formatter `fmt` for `v1, v2`.
-
 ---
 
-**Prefix:** `gtaPF3`
-
+**Prefix:** `gtaPF3`  
+**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED_FORMAT3(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3});$0
 ```
 
-**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3`.
-
 ---
 
-**Prefix:** `gtaPF4`
-
+**Prefix:** `gtaPF4`  
+**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3, v4`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED_FORMAT4(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0
 ```
 
-**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3, v4`.
-
 ---
 
-**Prefix:** `gtaPF5`
-
+**Prefix:** `gtaPF5`  
+**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3, v4, v5`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_PRED_FORMAT5(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0
 ```
 
-**Description:** Checks the user-defined formatter `fmt` for `v1, v2, v3, v4, v5`.
-
 ---
 
-**Prefix:** `gtaHS`
-
+**Prefix:** `gtaHS`  
+**Description:** Checks that the HRESULT `expr` indicates success (SUCCEEDED).  
 **Output:**
 
-```sh
+```txt
 ASSERT_HRESULT_SUCCEEDED(${1:expr});$0
 ```
 
-**Description:** Checks that the HRESULT `expr` indicates success (SUCCEEDED).
-
 ---
 
-**Prefix:** `gtaHF`
-
+**Prefix:** `gtaHF`  
+**Description:** Checks that the HRESULT `expr` indicates failure (FAILED).  
 **Output:**
 
-```sh
+```txt
 ASSERT_HRESULT_FAILED(${1:expr});$0
 ```
 
-**Description:** Checks that the HRESULT `expr` indicates failure (FAILED).
-
 ---
 
-**Prefix:** `gtaDEATH`
-
+**Prefix:** `gtaDEATH`  
+**Description:** Checks that `statement` causes the process to die and its stderr matches `regex`.  
 **Output:**
 
-```sh
+```txt
 ASSERT_DEATH(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks that `statement` causes the process to die and its stderr matches `regex`.
-
 ---
 
-**Prefix:** `gtaDIS`
-
+**Prefix:** `gtaDIS`  
+**Description:** Checks death as in ASSERT_DEATH, but skips on unsupported platforms.  
 **Output:**
 
-```sh
+```txt
 ASSERT_DEATH_IF_SUPPORTED(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks death as in ASSERT_DEATH, but skips on unsupported platforms.
-
 ---
 
-**Prefix:** `gtaDDEATH`
-
+**Prefix:** `gtaDDEATH`  
+**Description:** Checks death only in debug mode; behaves like ASSERT_DEATH otherwise.  
 **Output:**
 
-```sh
+```txt
 ASSERT_DEBUG_DEATH(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks death only in debug mode; behaves like ASSERT_DEATH otherwise.
-
 ---
 
-**Prefix:** `gtaEXIT`
-
+**Prefix:** `gtaEXIT`  
+**Description:** Checks that `statement` exits and that `predicate` and `regex` match its exit code and output.  
 **Output:**
 
-```sh
+```txt
 ASSERT_EXIT(${1:statement}, ${2:predicate}, ${3:regex});$0
 ```
-
-**Description:** Checks that `statement` exits and that `predicate` and `regex` match its exit code and output.
 
 ---
 
@@ -455,51 +385,43 @@ ASSERT_EXIT(${1:statement}, ${2:predicate}, ${3:regex});$0
 
 ---
 
-**Prefix:** `gtcSUCCEED`
-
+**Prefix:** `gtcSUCCEED`  
+**Description:** Explicitly signals that the current test has succeeded.  
 **Output:**
 
-```sh
+```txt
 SUCCEED();$0
 ```
 
-**Description:** Explicitly signals that the current test has succeeded.
-
 ---
 
-**Prefix:** `gtcFAIL`
-
+**Prefix:** `gtcFAIL`  
+**Description:** Generates a fatal failure and aborts the current test immediately.  
 **Output:**
 
-```sh
+```txt
 FAIL();$0
 ```
 
-**Description:** Generates a fatal failure and aborts the current test immediately.
-
 ---
 
-**Prefix:** `gtcAF`
-
+**Prefix:** `gtcAF`  
+**Description:** Records a non-fatal failure at the current source location.  
 **Output:**
 
-```sh
+```txt
 ADD_FAILURE();$0
 ```
 
-**Description:** Records a non-fatal failure at the current source location.
-
 ---
 
-**Prefix:** `gtcAFA`
-
+**Prefix:** `gtcAFA`  
+**Description:** Records a non-fatal failure at the specified file and line.  
 **Output:**
 
-```sh
+```txt
 ADD_FAILURE_AT(${1:file}, ${2:line});$0
 ```
-
-**Description:** Records a non-fatal failure at the specified file and line.
 
 ---
 
@@ -507,423 +429,353 @@ ADD_FAILURE_AT(${1:file}, ${2:line});$0
 
 ---
 
-**Prefix:** `gteTHAT`
-
+**Prefix:** `gteTHAT`  
+**Description:** Checks that `value` matches `matcher`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_THAT(${1:value}, ${2:matcher});$0
 ```
 
-**Description:** Checks that `value` matches `matcher`.
-
 ---
 
-**Prefix:** `gteTRUE`
-
+**Prefix:** `gteTRUE`  
+**Description:** Checks that `condition` is true.  
 **Output:**
 
-```sh
+```txt
 EXPECT_TRUE(${1:condition});$0
 ```
 
-**Description:** Checks that `condition` is true.
-
 ---
 
-**Prefix:** `gteFALSE`
-
+**Prefix:** `gteFALSE`  
+**Description:** Checks that `condition` is false.  
 **Output:**
 
-```sh
+```txt
 EXPECT_FALSE(${1:condition});$0
 ```
 
-**Description:** Checks that `condition` is false.
-
 ---
 
-**Prefix:** `gteEQ`
-
+**Prefix:** `gteEQ`  
+**Description:** Checks that `val1 == val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 == val2`.
-
 ---
 
-**Prefix:** `gteNE`
-
+**Prefix:** `gteNE`  
+**Description:** Checks that `val1 != val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_NE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 != val2`.
-
 ---
 
-**Prefix:** `gteLT`
-
+**Prefix:** `gteLT`  
+**Description:** Checks that `val1 < val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_LT(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 < val2`.
-
 ---
 
-**Prefix:** `gteLE`
-
+**Prefix:** `gteLE`  
+**Description:** Checks that `val1 <= val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_LE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 <= val2`.
-
 ---
 
-**Prefix:** `gteGT`
-
+**Prefix:** `gteGT`  
+**Description:** Checks that `val1 > val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_GT(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 > val2`.
-
 ---
 
-**Prefix:** `gteGE`
-
+**Prefix:** `gteGE`  
+**Description:** Checks that `val1 >= val2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_GE(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that `val1 >= val2`.
-
 ---
 
-**Prefix:** `gteSTREQ`
-
+**Prefix:** `gteSTREQ`  
+**Description:** Checks that C-strings `str1` and `str2` are equal.  
 **Output:**
 
-```sh
+```txt
 EXPECT_STREQ(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that C-strings `str1` and `str2` are equal.
-
 ---
 
-**Prefix:** `gteSTRNE`
-
+**Prefix:** `gteSTRNE`  
+**Description:** Checks that C-strings `str1` and `str2` are not equal.  
 **Output:**
 
-```sh
+```txt
 EXPECT_STRNE(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that C-strings `str1` and `str2` are not equal.
-
 ---
 
-**Prefix:** `gteSTRCASEEQ`
-
+**Prefix:** `gteSTRCASEEQ`  
+**Description:** Checks that C-strings `str1` and `str2` are equal, ignoring case.  
 **Output:**
 
-```sh
+```txt
 EXPECT_STRCASEEQ(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that C-strings `str1` and `str2` are equal, ignoring case.
-
 ---
 
-**Prefix:** `gteSTRCASENE`
-
+**Prefix:** `gteSTRCASENE`  
+**Description:** Checks that C-strings `str1` and `str2` are not equal, ignoring case.  
 **Output:**
 
-```sh
+```txt
 EXPECT_STRCASENE(${1:str1}, ${2:str2});$0
 ```
 
-**Description:** Checks that C-strings `str1` and `str2` are not equal, ignoring case.
-
 ---
 
-**Prefix:** `gteFEQ`
-
+**Prefix:** `gteFEQ`  
+**Description:** Checks that floats `val1` and `val2` are almost equal.  
 **Output:**
 
-```sh
+```txt
 EXPECT_FLOAT_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that floats `val1` and `val2` are almost equal.
-
 ---
 
-**Prefix:** `gteDEQ`
-
+**Prefix:** `gteDEQ`  
+**Description:** Checks that doubles `val1` and `val2` are almost equal.  
 **Output:**
 
-```sh
+```txt
 EXPECT_DOUBLE_EQ(${1:val1}, ${2:val2});$0
 ```
 
-**Description:** Checks that doubles `val1` and `val2` are almost equal.
-
 ---
 
-**Prefix:** `gteNEAR`
-
+**Prefix:** `gteNEAR`  
+**Description:** Checks that `|val1 - val2| <= abs_error`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_NEAR(${1:val1}, ${2:val2}, ${3:abs_error});$0
 ```
 
-**Description:** Checks that `|val1 - val2| <= abs_error`.
-
 ---
 
-**Prefix:** `gteTHROW`
-
+**Prefix:** `gteTHROW`  
+**Description:** Checks that `statement` throws an exception of type `exception_type`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_THROW(${1:statement}, ${2:exception_type});$0
 ```
 
-**Description:** Checks that `statement` throws an exception of type `exception_type`.
-
 ---
 
-**Prefix:** `gteANYTHROW`
-
+**Prefix:** `gteANYTHROW`  
+**Description:** Checks that `statement` throws any exception.  
 **Output:**
 
-```sh
+```txt
 EXPECT_ANY_THROW(${1:statement});$0
 ```
 
-**Description:** Checks that `statement` throws any exception.
-
 ---
 
-**Prefix:** `gteNOTHROW`
-
+**Prefix:** `gteNOTHROW`  
+**Description:** Checks that `statement` does not throw any exception.  
 **Output:**
 
-```sh
+```txt
 EXPECT_NO_THROW(${1:statement});$0
 ```
 
-**Description:** Checks that `statement` does not throw any exception.
-
 ---
 
-**Prefix:** `gteP1`
-
+**Prefix:** `gteP1`  
+**Description:** Checks unary predicate `pred` on `v1`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED1(${1:pred}, ${2:v1});$0
 ```
 
-**Description:** Checks unary predicate `pred` on `v1`.
-
 ---
 
-**Prefix:** `gteP2`
-
+**Prefix:** `gteP2`  
+**Description:** Checks binary predicate `pred` on `v1, v2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED2(${1:pred}, ${2:v1}, ${3:v2});$0
 ```
 
-**Description:** Checks binary predicate `pred` on `v1, v2`.
-
 ---
 
-**Prefix:** `gteP3`
-
+**Prefix:** `gteP3`  
+**Description:** Checks ternary predicate `pred` on `v1, v2, v3`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED3(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3});$0
 ```
 
-**Description:** Checks ternary predicate `pred` on `v1, v2, v3`.
-
 ---
 
-**Prefix:** `gteP4`
-
+**Prefix:** `gteP4`  
+**Description:** Checks 4-ary predicate `pred` on `v1, v2, v3, v4`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED4(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0
 ```
 
-**Description:** Checks 4-ary predicate `pred` on `v1, v2, v3, v4`.
-
 ---
 
-**Prefix:** `gteP5`
-
+**Prefix:** `gteP5`  
+**Description:** Checks 5-ary predicate `pred` on `v1, v2, v3, v4, v5`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED5(${1:pred}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0
 ```
 
-**Description:** Checks 5-ary predicate `pred` on `v1, v2, v3, v4, v5`.
-
 ---
 
-**Prefix:** `gtePF1`
-
+**Prefix:** `gtePF1`  
+**Description:** Checks user-defined formatter `fmt` for `v1`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED_FORMAT1(${1:fmt}, ${2:v1});$0
 ```
 
-**Description:** Checks user-defined formatter `fmt` for `v1`.
-
 ---
 
-**Prefix:** `gtePF2`
-
+**Prefix:** `gtePF2`  
+**Description:** Checks user-defined formatter `fmt` for `v1, v2`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED_FORMAT2(${1:fmt}, ${2:v1}, ${3:v2});$0
 ```
 
-**Description:** Checks user-defined formatter `fmt` for `v1, v2`.
-
 ---
 
-**Prefix:** `gtePF3`
-
+**Prefix:** `gtePF3`  
+**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED_FORMAT3(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3});$0
 ```
 
-**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3`.
-
 ---
 
-**Prefix:** `gtePF4`
-
+**Prefix:** `gtePF4`  
+**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3, v4`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED_FORMAT4(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4});$0
 ```
 
-**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3, v4`.
-
 ---
 
-**Prefix:** `gtePF5`
-
+**Prefix:** `gtePF5`  
+**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3, v4, v5`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_PRED_FORMAT5(${1:fmt}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:v4}, ${6:v5});$0
 ```
 
-**Description:** Checks user-defined formatter `fmt` for `v1, v2, v3, v4, v5`.
-
 ---
 
-**Prefix:** `gteHS`
-
+**Prefix:** `gteHS`  
+**Description:** Checks that HRESULT `expr` indicates success (SUCCEEDED).  
 **Output:**
 
-```sh
+```txt
 EXPECT_HRESULT_SUCCEEDED(${1:expr});$0
 ```
 
-**Description:** Checks that HRESULT `expr` indicates success (SUCCEEDED).
-
 ---
 
-**Prefix:** `gteHF`
-
+**Prefix:** `gteHF`  
+**Description:** Checks that HRESULT `expr` indicates failure (FAILED).  
 **Output:**
 
-```sh
+```txt
 EXPECT_HRESULT_FAILED(${1:expr});$0
 ```
 
-**Description:** Checks that HRESULT `expr` indicates failure (FAILED).
-
 ---
 
-**Prefix:** `gteDEATH`
-
+**Prefix:** `gteDEATH`  
+**Description:** Checks that `statement` causes the process to die and stderr matches `regex`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_DEATH(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks that `statement` causes the process to die and stderr matches `regex`.
-
 ---
 
-**Prefix:** `gteDIS`
-
+**Prefix:** `gteDIS`  
+**Description:** Checks death as in EXPECT_DEATH, but skips on unsupported platforms.  
 **Output:**
 
-```sh
+```txt
 EXPECT_DEATH_IF_SUPPORTED(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks death as in EXPECT_DEATH, but skips on unsupported platforms.
-
 ---
 
-**Prefix:** `gteDDEATH`
-
+**Prefix:** `gteDDEATH`  
+**Description:** Checks death only in debug mode; behaves like EXPECT_DEATH otherwise.  
 **Output:**
 
-```sh
+```txt
 EXPECT_DEBUG_DEATH(${1:statement}, ${2:regex});$0
 ```
 
-**Description:** Checks death only in debug mode; behaves like EXPECT_DEATH otherwise.
-
 ---
 
-**Prefix:** `gteEXIT`
-
+**Prefix:** `gteEXIT`  
+**Description:** Checks that `statement` exits and that `predicate` and `regex` match its exit code and output.  
 **Output:**
 
-```sh
+```txt
 EXPECT_EXIT(${1:statement}, ${2:predicate}, ${3:regex});$0
 ```
-
-**Description:** Checks that `statement` exits and that `predicate` and `regex` match its exit code and output.
 
 ---
 
@@ -931,243 +783,203 @@ EXPECT_EXIT(${1:statement}, ${2:predicate}, ${3:regex});$0
 
 ---
 
-**Prefix:** `gtmTEST`
-
+**Prefix:** `gtmTEST`  
+**Description:** Defines a regular test case named `TestName` in the test suite `TestSuiteName`.  
 **Output:**
 
-```sh
+```txt
 TEST(${1:TestSuiteName}, ${2:TestName});$0
 ```
 
-**Description:** Defines a regular test case named `TestName` in the test suite `TestSuiteName`.
-
 ---
 
-**Prefix:** `gtmTF`
-
+**Prefix:** `gtmTF`  
+**Description:** Defines a test named `TestName` that uses the fixture `TestFixtureName`.  
 **Output:**
 
-```sh
+```txt
 TEST_F(${1:TestFixtureName}, ${2:TestName});$0
 ```
 
-**Description:** Defines a test named `TestName` that uses the fixture `TestFixtureName`.
-
 ---
 
-**Prefix:** `gtmTP`
-
+**Prefix:** `gtmTP`  
+**Description:** Defines a parameterized test named `TestName` in the fixture `TestFixtureName`.  
 **Output:**
 
-```sh
+```txt
 TEST_P(${1:TestFixtureName}, ${2:TestName});$0
 ```
 
-**Description:** Defines a parameterized test named `TestName` in the fixture `TestFixtureName`.
-
 ---
 
-**Prefix:** `gtmITSP`
-
+**Prefix:** `gtmITSP`  
+**Description:** Instantiates the parameterized test suite `TestSuiteName` with the given `param_generator` under the instantiation name `InstantiationName`.  
 **Output:**
 
-```sh
+```txt
 INSTANTIATE_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:param_generator});$0
 ```
 
-**Description:** Instantiates the parameterized test suite `TestSuiteName` with the given `param_generator` under the instantiation name `InstantiationName`.
-
 ---
 
-**Prefix:** `gtmITSPg`
-
+**Prefix:** `gtmITSPg`  
+**Description:** Instantiates the parameterized test suite `TestSuiteName` with a custom `NameGenerator` to control test name suffixes.  
 **Output:**
 
-```sh
+```txt
 INSTANTIATE_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:param_generator}, ${4:NameGenerator});$0
 ```
 
-**Description:** Instantiates the parameterized test suite `TestSuiteName` with a custom `NameGenerator` to control test name suffixes.
-
 ---
 
-**Prefix:** `gtmGAUPT`
-
+**Prefix:** `gtmGAUPT`  
+**Description:** Allows declaration of a parameterized test suite `TestSuiteName` without instantiation.  
 **Output:**
 
-```sh
+```txt
 GTEST_ALLOW_UNINSTANTIATED_PARAMETERIZED_TEST(${1:TestSuiteName});$0
 ```
 
-**Description:** Allows declaration of a parameterized test suite `TestSuiteName` without instantiation.
-
 ---
 
-**Prefix:** `gtmTT`
-
+**Prefix:** `gtmTT`  
+**Description:** Defines and runs a typed test `TestName` in the typed test suite `TestSuiteName`.  
 **Output:**
 
-```sh
+```txt
 TYPED_TEST(${1:TestSuiteName}, ${2:TestName});$0
 ```
 
-**Description:** Defines and runs a typed test `TestName` in the typed test suite `TestSuiteName`.
-
 ---
 
-**Prefix:** `gtmTTS`
-
+**Prefix:** `gtmTTS`  
+**Description:** Defines a typed test suite `TestFixtureName` parameterized by `Types`.  
 **Output:**
 
-```sh
+```txt
 TYPED_TEST_SUITE(${1:TestFixtureName}, ${2:Types});$0
 ```
 
-**Description:** Defines a typed test suite `TestFixtureName` parameterized by `Types`.
-
 ---
 
-**Prefix:** `gtmTTSg`
-
+**Prefix:** `gtmTTSg`  
+**Description:** Defines a typed test suite `TestFixtureName` parameterized by `Types`, using `NameGenerator` to customize test name suffixes.  
 **Output:**
 
-```sh
+```txt
 TYPED_TEST_SUITE(${1:TestFixtureName}, ${2:Types}, ${3:NameGenerator});$0
 ```
 
-**Description:** Defines a typed test suite `TestFixtureName` parameterized by `Types`, using `NameGenerator` to customize test name suffixes.
-
 ---
 
-**Prefix:** `gtmTTSP`
-
+**Prefix:** `gtmTTSP`  
+**Description:** Registers a typed test suite pattern `TestFixtureName` for later instantiation.  
 **Output:**
 
-```sh
+```txt
 TYPED_TEST_SUITE_P(${1:TestFixtureName});$0
 ```
 
-**Description:** Registers a typed test suite pattern `TestFixtureName` for later instantiation.
-
 ---
 
-**Prefix:** `gtmTTP`
-
+**Prefix:** `gtmTTP`  
+**Description:** Defines a typed test pattern `TestName` for the typed test suite `TestSuiteName`.  
 **Output:**
 
-```sh
+```txt
 TYPED_TEST_P(${1:TestSuiteName}, ${2:TestName});$0
 ```
 
-**Description:** Defines a typed test pattern `TestName` for the typed test suite `TestSuiteName`.
-
 ---
 
-**Prefix:** `gtmRTSP`
-
+**Prefix:** `gtmRTSP`  
+**Description:** Registers one or more typed test names (`TestName1`, `TestName2`, …) with the typed test suite pattern `TestSuiteName`.  
 **Output:**
 
-```sh
+```txt
 REGISTER_TYPED_TEST_SUITE_P(${1:TestSuiteName}, ${2:TestName1}${3:, ${4:TestName2}});$0
 ```
 
-**Description:** Registers one or more typed test names (`TestName1`, `TestName2`, …) with the typed test suite pattern `TestSuiteName`.
-
 ---
 
-**Prefix:** `gtmITTSP`
-
+**Prefix:** `gtmITTSP`  
+**Description:** Instantiates the typed test suite pattern `TestSuiteName` with the list of `Types` under the name `InstantiationName`.  
 **Output:**
 
-```sh
+```txt
 INSTANTIATE_TYPED_TEST_SUITE_P(${1:InstantiationName}, ${2:TestSuiteName}, ${3:Types});$0
 ```
 
-**Description:** Instantiates the typed test suite pattern `TestSuiteName` with the list of `Types` under the name `InstantiationName`.
-
 ---
 
-**Prefix:** `gtmFT`
-
+**Prefix:** `gtmFT`  
+**Description:** Declares `TestName` in `TestSuiteName` as a friend of its fixture class to grant access to private members.  
 **Output:**
 
-```sh
+```txt
 FRIEND_TEST(${1:TestSuiteName}, ${2:TestName});$0
 ```
 
-**Description:** Declares `TestName` in `TestSuiteName` as a friend of its fixture class to grant access to private members.
-
 ---
 
-**Prefix:** `gtmST`
-
+**Prefix:** `gtmST`  
+**Description:** Inserts a trace message that will be printed if a failure occurs in the current scope.  
 **Output:**
 
-```sh
+```txt
 SCOPED_TRACE(${1:message});$0
 ```
 
-**Description:** Inserts a trace message that will be printed if a failure occurs in the current scope.
-
 ---
 
-**Prefix:** `gtmGS`
-
+**Prefix:** `gtmGS`  
+**Description:** Skips the remainder of the current test at runtime.  
 **Output:**
 
-```sh
+```txt
 GTEST_SKIP();$0
 ```
 
-**Description:** Skips the remainder of the current test at runtime.
-
 ---
 
-**Prefix:** `gtmMM`
-
+**Prefix:** `gtmMM`  
+**Description:** Defines a mock method `method_name` with return type `return_type` and arguments `args`.  
 **Output:**
 
-```sh
+```txt
 MOCK_METHOD(${1:return_type}, ${2:method_name}, (${3:args}));$0
 ```
 
-**Description:** Defines a mock method `method_name` with return type `return_type` and arguments `args`.
-
 ---
 
-**Prefix:** `gtmMMs`
-
+**Prefix:** `gtmMMs`  
+**Description:** Defines a mock method `method_name` with return type `return_type`, arguments `args`, and qualifiers `specs`.  
 **Output:**
 
-```sh
+```txt
 MOCK_METHOD(${1:return_type}, ${2:method_name}, (${3:args}), (${4:specs}));$0
 ```
 
-**Description:** Defines a mock method `method_name` with return type `return_type`, arguments `args`, and qualifiers `specs`.
-
 ---
 
-**Prefix:** `gtmEC`
-
+**Prefix:** `gtmEC`  
+**Description:** Creates an expectation that the method `method_name(matchers)` will be called on `mock_object`.  
 **Output:**
 
-```sh
+```txt
 EXPECT_CALL(${1:mock_object}, ${2:method_name}(${3:matchers}))$0
 ```
 
-**Description:** Creates an expectation that the method `method_name(matchers)` will be called on `mock_object`.
-
 ---
 
-**Prefix:** `gtmOC`
-
+**Prefix:** `gtmOC`  
+**Description:** Specifies default behavior `action` for calls to `method_name(matchers)` on `mock_object`.  
 **Output:**
 
-```sh
+```txt
 ON_CALL(${1:mock_object}, ${2:method_name}(${3:matchers}))$4.WillByDefault(${5:action});$0
 ```
-
-**Description:** Specifies default behavior `action` for calls to `method_name(matchers)` on `mock_object`.
 
 ---
 <!-- SNIPPETS:END -->
