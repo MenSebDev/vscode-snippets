@@ -1,26 +1,29 @@
 {
-  // ===================
-  // = Global settings =
-  // ===================
-  "files.insertFinalNewline": true,
-  "editor.formatOnSave": true,
-  "editor.snippetSuggestions": "top",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
-  },
-  // ==================
-  // = Files settings =
-  // ==================
-  // JSON
-  "[json][jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-  },
-  // MARKDOWN
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
-  // YAML
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-  },
+    // Editor settings
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "editor.snippetSuggestions": "top",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    // Language settings
+    // JSON
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    // MARKDOWN
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    // SHELL
+    "[shellscript]": {
+        "editor.defaultFormatter": "mkhl.shfmt"
+    },
+    // YAML
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+    },
+    // Extension settings
+    // SHFMT
+    "shfmt.executablePath": "C:\\Program Files\\SHFMT\\shfmt.exe",
 }

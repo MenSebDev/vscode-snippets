@@ -2,7 +2,7 @@
     "name": "snippets-gtest",
     "displayName": "Snippets GoogleTest",
     "description": "GoogleTest snippets for VS Code.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "mensebdev",
     "author": {
         "name": "Sébastien Menard",
