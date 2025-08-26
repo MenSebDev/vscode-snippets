@@ -155,12 +155,12 @@ for file in "${SNIPPET_FILES[@]}"; do
 
     filename=$(basename "$file" .json)
 
-    snippets=$(jq -r --arg fence "sh" '
+    snippets=$(jq -r --arg fence "txt" '
         def md_block($name; $prefix; $body; $desc):
-            "**Prefix:** `\($prefix)`\n\n" +
+            "**Prefix:** `\($prefix)`  \n" +
+            "**Description:** " + $desc + "  \n" +
             "**Output:**\n\n```" + $fence + "\n" +
-            ($body | join("\n")) + "\n```\n\n" +
-            "**Description:** " + $desc + "\n" +
+            ($body | join("\n")) + "\n```\n" +
             "\n---\n";
 
         to_entries[]
