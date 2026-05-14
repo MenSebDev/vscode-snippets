@@ -1,8 +1,5 @@
 <div align="center">
-  <img
-    alt="logo"
-    src="logo.png"
-  />
+  <img alt="logo" src="logo.png" />
   <h1>
     snippets-gtest
   </h1>
@@ -13,19 +10,109 @@
 
 <hr>
 
+<p align="center" vertical-align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-gtest">
+    <img alt="VS Code Marketplace" src="https://img.shields.io/visual-studio-marketplace/v/mensebdev.snippets-gtest?label=Marketplace&logo=visualstudiocode" />
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-gtest">
+    <img alt="Downloads" src="https://img.shields.io/visual-studio-marketplace/d/mensebdev.snippets-gtest?color=blue" />
+  </a>
+  <a href="https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/cpp/gtest/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/mensebdev/snippets-gtest" />
+  </a>
+</p>
+
+<hr>
+
 ## Table of contents <!-- omit from toc -->
 
-- [Snippets](#snippets)
+- [Installation](#installation)
+- [Naming Conventions](#naming-conventions)
+  - [Base](#base)
+  - [Categories](#categories)
+  - [Names](#names)
+- [Usage](#usage)
+- [Snippets Overview](#snippets-overview)
+- [Snippets Details](#snippets-details)
   - [Asserts](#asserts)
   - [Controls](#controls)
   - [Expects](#expects)
   - [Macros](#macros)
 
-## Snippets
+## Installation
 
-Here is the list of snippets included in this collection.
+You can install this extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-gtest).
 
-<!-- SNIPPETS:BEGIN -->
+You can install directly via VS Code:
+
+1. Open the **Extensions** view.
+2. Search for **snippets-gtest**.
+3. Click **Install** on the **Snippets GoogleTest** extension.
+
+## Naming Conventions
+
+All snippet prefixes in this extension follow a consistent pattern to make them easy to remember.
+
+### Base
+
+All snippets start with: `gt` (short for **Google Test**).
+
+### Categories
+
+After `gt`, add one letter to choose the snippet category:
+
+| Letter | Category  |
+|:------:|-----------|
+| `a` | **Asserts**  |
+| `e` | **Expects**  |
+| `m` | **Macros**   |
+| `c` | **Controls** |
+
+Example:
+
+- `gta...` → **ASSERT** snippets
+- `gte...` → **EXPECT** snippets
+
+### Names
+
+After the category letter, the rest of the prefix matches the Google Test function name.
+
+For **single-word** names, **repeat the word**, _e.g._:  
+
+- `ASSERT_TRUE` → `gtaTRUE`
+- `EXPECTT_THAT` → `gteTHAT`
+
+For **multi-word** names, **use the capitalized initials**, _e.g._:  
+
+- `ASSERT_GT` → `gtaGT`  
+- `EXPECT_PRED_FORMAT1` → `gtePF1`
+
+This makes it easy to find snippets by partially typing their Google Test name.
+
+## Usage
+
+Type the snippet prefix and press `Enter` or `Tab` or select it from the IntelliSense menu.
+
+**Example:**  
+The prefix `gtaTRUE` would expand to:
+
+```cpp
+ASSERT_TRUE(condition);
+```
+
+## Snippets Overview
+
+Here is the overview of the list of snippets included in this collection.
+
+<!-- OVERVIEW:OPENING -->
+
+<!-- OVERVIEW:CLOSING -->
+
+## Snippets Details
+
+Here is the detailed list of snippets included in this collection. They are represented with their tab stops. The last tab stop being the `$0` at the end of the line.
+
+<!-- SNIPPETS:OPENING -->
 
 ### Asserts
 
@@ -982,4 +1069,4 @@ ON_CALL(${1:mock_object}, ${2:method_name}(${3:matchers}))$4.WillByDefault(${5:a
 ```
 
 ---
-<!-- SNIPPETS:END -->
+<!-- SNIPPETS:CLOSING -->

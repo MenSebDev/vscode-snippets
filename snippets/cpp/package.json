@@ -1,5 +1,5 @@
 {
-    "name": "cpp-snippets-pack",
+    "name": "snippets-pack-cpp",
     "displayName": "C++ Extension Pack",
     "description": "Useful C++ snippet extensions for VS Code.",
     "homepage": "https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/cpp/README.md",
@@ -41,7 +41,7 @@
         "gtest"
     ],
     "extensionPack": [
-        "mensebdev.cpp-snippets",
-        "mensebdev.gtest-snippets"
+        "mensebdev.snippets-cpp",
+        "mensebdev.snippets-gtest"
     ]
 }
