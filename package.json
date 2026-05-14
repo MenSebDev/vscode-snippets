@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "vscode-snippets",
+  "description": "Collection of code snippets for different languages in VS Code.",
+  "author": "MenSeb",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@11.0.8",
+  "keywords": [
+    "vscode",
+    "snippets",
+    "code",
+    "programming"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.1"
+  }
+}
