@@ -1,9 +1,11 @@
 {
+    "version": "1.0.5",
     "name": "snippets-gtest",
     "displayName": "Snippets GoogleTest",
     "description": "GoogleTest snippets for VS Code.",
-    "version": "1.0.5",
     "publisher": "mensebdev",
+    "license": "MIT",
+    "pricing": "Free",
     "author": {
         "name": "Sébastien Menard",
         "email": "contact@menseb.dev",
@@ -19,6 +21,10 @@
         "email": "contact@menseb.dev",
         "url": "https://github.com/MenSebDev/vscode-snippets/issues"
     },
+    "scripts": {
+        "vscode:package": "vsce package",
+        "vscode:publish": "vsce publish --skip-duplicate --pat $VSCE_PAT"
+    },
     "icon": "logo.png",
     "files": [
         "CHANGELOG.md",
@@ -33,8 +39,6 @@
     "engines": {
         "vscode": "^1.8.0"
     },
-    "license": "MIT",
-    "pricing": "Free",
     "categories": [
         "Snippets"
     ],
