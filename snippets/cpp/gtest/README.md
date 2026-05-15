@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="logo" src="logo.png" width="250" />
+  <img alt="logo" src="logo.png" width="256" />
   <h1>
     snippets-gtest
   </h1>
