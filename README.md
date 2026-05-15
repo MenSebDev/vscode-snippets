@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="logo" src="logo.svg" width="250" />
+  <img alt="logo" src="logo.svg" width="256" />
   <h1>
     vscode-snippets
   </h1>
