@@ -78,7 +78,6 @@ generate_snippets_details() {
         local snippets 
         snippets="$(jq -r --arg fence "txt" '
             def md_block($name; $prefix; $body; $desc):
-                "---\n\n" +
                 "**Prefix:** `\($prefix)`  \n" +
                 "**Description:** " + $desc + "  \n" +
                 "**Output:**\n\n```" + $fence + "\n" +
@@ -91,7 +90,7 @@ generate_snippets_details() {
             | md_block($name; $v.prefix; $v.body; $v.description)
         ' "$file")"
 
-        printf "\n### %s\n\n%s\n" "${filename^}" "$snippets" >> "$path_content"
+        printf "\n### %s\n\n---\n\n%s\n" "${filename^}" "$snippets" >> "$path_content"
     done
 }
 
