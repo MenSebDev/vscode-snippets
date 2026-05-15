@@ -10,17 +10,14 @@
 
 <hr>
 
-<p align="center" vertical-align="center">
+<div align="center" vertical-align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-gtest">
-    <img alt="VS Code Marketplace" src="https://img.shields.io/visual-studio-marketplace/v/mensebdev.snippets-gtest?label=Marketplace&logo=visualstudiocode" />
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-gtest">
-    <img alt="Downloads" src="https://img.shields.io/visual-studio-marketplace/d/mensebdev.snippets-gtest?color=blue" />
+    <img alt="VS Code Marketplace" src="https://img.shields.io/badge/Marketplace-Snippets%20GoogleTest-blue?logo=visualstudiocode" />
   </a>
   <a href="https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/cpp/gtest/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/mensebdev/snippets-gtest" />
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
   </a>
-</p>
+</div>
 
 <hr>
 
@@ -33,11 +30,15 @@
   - [Names](#names)
 - [Usage](#usage)
 - [Snippets Overview](#snippets-overview)
-- [Snippets Details](#snippets-details)
   - [Asserts](#asserts)
   - [Controls](#controls)
   - [Expects](#expects)
   - [Macros](#macros)
+- [Snippets Details](#snippets-details)
+  - [Asserts](#asserts-1)
+  - [Controls](#controls-1)
+  - [Expects](#expects-1)
+  - [Macros](#macros-1)
 
 ## Installation
 
@@ -106,6 +107,119 @@ Here is the overview of the list of snippets included in this collection.
 
 <!-- OVERVIEW:OPENING -->
 
+### Asserts
+
+| Prefix | Description |
+|--------|-------------|
+| `gtaTHAT` | Checks that `value` matches the matcher `matcher`. |
+| `gtaTRUE` | Checks that `condition` is true. |
+| `gtaFALSE` | Checks that `condition` is false. |
+| `gtaEQ` | Checks that `val1 == val2`. |
+| `gtaNE` | Checks that `val1 != val2`. |
+| `gtaLT` | Checks that `val1 < val2`. |
+| `gtaLE` | Checks that `val1 <= val2`. |
+| `gtaGT` | Checks that `val1 > val2`. |
+| `gtaGE` | Checks that `val1 >= val2`. |
+| `gtaSTREQ` | Checks that the C-strings `str1` and `str2` are equal. |
+| `gtaSTRNE` | Checks that the C-strings `str1` and `str2` are not equal. |
+| `gtaSTRCASEEQ` | Checks that the C-strings `str1` and `str2` are equal, ignoring case. |
+| `gtaSTRCASENE` | Checks that the C-strings `str1` and `str2` are not equal, ignoring case. |
+| `gtaFEQ` | Checks that the floats `val1` and `val2` are almost equal. |
+| `gtaDEQ` | Checks that the doubles `val1` and `val2` are almost equal. |
+| `gtaNEAR` | Checks that `\|val1 - val2\| <= abs_error`. |
+| `gtaTHROW` | Checks that `statement` throws an exception of type `exception_type`. |
+| `gtaANYTHROW` | Checks that `statement` throws any exception. |
+| `gtaNOTHROW` | Checks that `statement` does not throw any exception. |
+| `gtaP1` | Checks the unary predicate `pred` on `v1`. |
+| `gtaP2` | Checks the binary predicate `pred` on `v1, v2`. |
+| `gtaP3` | Checks the ternary predicate `pred` on `v1, v2, v3`. |
+| `gtaP4` | Checks the 4-ary predicate `pred` on `v1, v2, v3, v4`. |
+| `gtaP5` | Checks the 5-ary predicate `pred` on `v1, v2, v3, v4, v5`. |
+| `gtaPF1` | Checks the user-defined formatter `fmt` for `v1`. |
+| `gtaPF2` | Checks the user-defined formatter `fmt` for `v1, v2`. |
+| `gtaPF3` | Checks the user-defined formatter `fmt` for `v1, v2, v3`. |
+| `gtaPF4` | Checks the user-defined formatter `fmt` for `v1, v2, v3, v4`. |
+| `gtaPF5` | Checks the user-defined formatter `fmt` for `v1, v2, v3, v4, v5`. |
+| `gtaHS` | Checks that the HRESULT `expr` indicates success (SUCCEEDED). |
+| `gtaHF` | Checks that the HRESULT `expr` indicates failure (FAILED). |
+| `gtaDEATH` | Checks that `statement` causes the process to die and its stderr matches `regex`. |
+| `gtaDIS` | Checks death as in ASSERT_DEATH, but skips on unsupported platforms. |
+| `gtaDDEATH` | Checks death only in debug mode; behaves like ASSERT_DEATH otherwise. |
+| `gtaEXIT` | Checks that `statement` exits and that `predicate` and `regex` match its exit code and output. |
+
+### Controls
+
+| Prefix | Description |
+|--------|-------------|
+| `gtcSUCCEED` | Explicitly signals that the current test has succeeded. |
+| `gtcFAIL` | Generates a fatal failure and aborts the current test immediately. |
+| `gtcAF` | Records a non-fatal failure at the current source location. |
+| `gtcAFA` | Records a non-fatal failure at the specified file and line. |
+
+### Expects
+
+| Prefix | Description |
+|--------|-------------|
+| `gteTHAT` | Checks that `value` matches `matcher`. |
+| `gteTRUE` | Checks that `condition` is true. |
+| `gteFALSE` | Checks that `condition` is false. |
+| `gteEQ` | Checks that `val1 == val2`. |
+| `gteNE` | Checks that `val1 != val2`. |
+| `gteLT` | Checks that `val1 < val2`. |
+| `gteLE` | Checks that `val1 <= val2`. |
+| `gteGT` | Checks that `val1 > val2`. |
+| `gteGE` | Checks that `val1 >= val2`. |
+| `gteSTREQ` | Checks that C-strings `str1` and `str2` are equal. |
+| `gteSTRNE` | Checks that C-strings `str1` and `str2` are not equal. |
+| `gteSTRCASEEQ` | Checks that C-strings `str1` and `str2` are equal, ignoring case. |
+| `gteSTRCASENE` | Checks that C-strings `str1` and `str2` are not equal, ignoring case. |
+| `gteFEQ` | Checks that floats `val1` and `val2` are almost equal. |
+| `gteDEQ` | Checks that doubles `val1` and `val2` are almost equal. |
+| `gteNEAR` | Checks that `\|val1 - val2\| <= abs_error`. |
+| `gteTHROW` | Checks that `statement` throws an exception of type `exception_type`. |
+| `gteANYTHROW` | Checks that `statement` throws any exception. |
+| `gteNOTHROW` | Checks that `statement` does not throw any exception. |
+| `gteP1` | Checks unary predicate `pred` on `v1`. |
+| `gteP2` | Checks binary predicate `pred` on `v1, v2`. |
+| `gteP3` | Checks ternary predicate `pred` on `v1, v2, v3`. |
+| `gteP4` | Checks 4-ary predicate `pred` on `v1, v2, v3, v4`. |
+| `gteP5` | Checks 5-ary predicate `pred` on `v1, v2, v3, v4, v5`. |
+| `gtePF1` | Checks user-defined formatter `fmt` for `v1`. |
+| `gtePF2` | Checks user-defined formatter `fmt` for `v1, v2`. |
+| `gtePF3` | Checks user-defined formatter `fmt` for `v1, v2, v3`. |
+| `gtePF4` | Checks user-defined formatter `fmt` for `v1, v2, v3, v4`. |
+| `gtePF5` | Checks user-defined formatter `fmt` for `v1, v2, v3, v4, v5`. |
+| `gteHS` | Checks that HRESULT `expr` indicates success (SUCCEEDED). |
+| `gteHF` | Checks that HRESULT `expr` indicates failure (FAILED). |
+| `gteDEATH` | Checks that `statement` causes the process to die and stderr matches `regex`. |
+| `gteDIS` | Checks death as in EXPECT_DEATH, but skips on unsupported platforms. |
+| `gteDDEATH` | Checks death only in debug mode; behaves like EXPECT_DEATH otherwise. |
+| `gteEXIT` | Checks that `statement` exits and that `predicate` and `regex` match its exit code and output. |
+
+### Macros
+
+| Prefix | Description |
+|--------|-------------|
+| `gtmTEST` | Defines a regular test case named `TestName` in the test suite `TestSuiteName`. |
+| `gtmTF` | Defines a test named `TestName` that uses the fixture `TestFixtureName`. |
+| `gtmTP` | Defines a parameterized test named `TestName` in the fixture `TestFixtureName`. |
+| `gtmITSP` | Instantiates the parameterized test suite `TestSuiteName` with the given `param_generator` under the instantiation name `InstantiationName`. |
+| `gtmITSPg` | Instantiates the parameterized test suite `TestSuiteName` with a custom `NameGenerator` to control test name suffixes. |
+| `gtmGAUPT` | Allows declaration of a parameterized test suite `TestSuiteName` without instantiation. |
+| `gtmTT` | Defines and runs a typed test `TestName` in the typed test suite `TestSuiteName`. |
+| `gtmTTS` | Defines a typed test suite `TestFixtureName` parameterized by `Types`. |
+| `gtmTTSg` | Defines a typed test suite `TestFixtureName` parameterized by `Types`, using `NameGenerator` to customize test name suffixes. |
+| `gtmTTSP` | Registers a typed test suite pattern `TestFixtureName` for later instantiation. |
+| `gtmTTP` | Defines a typed test pattern `TestName` for the typed test suite `TestSuiteName`. |
+| `gtmRTSP` | Registers one or more typed test names (`TestName1`, `TestName2`, …) with the typed test suite pattern `TestSuiteName`. |
+| `gtmITTSP` | Instantiates the typed test suite pattern `TestSuiteName` with the list of `Types` under the name `InstantiationName`. |
+| `gtmFT` | Declares `TestName` in `TestSuiteName` as a friend of its fixture class to grant access to private members. |
+| `gtmST` | Inserts a trace message that will be printed if a failure occurs in the current scope. |
+| `gtmGS` | Skips the remainder of the current test at runtime. |
+| `gtmMM` | Defines a mock method `method_name` with return type `return_type` and arguments `args`. |
+| `gtmMMs` | Defines a mock method `method_name` with return type `return_type`, arguments `args`, and qualifiers `specs`. |
+| `gtmEC` | Creates an expectation that the method `method_name(matchers)` will be called on `mock_object`. |
+| `gtmOC` | Specifies default behavior `action` for calls to `method_name(matchers)` on `mock_object`. |
 <!-- OVERVIEW:CLOSING -->
 
 ## Snippets Details
