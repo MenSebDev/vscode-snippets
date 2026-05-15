@@ -1,5 +1,11 @@
 # snippets-gtest
 
+## 1.0.7
+
+### Patch Changes
+
+- d9bdb8b: Update extension README and logo.
+
 ## 1.0.6
 
 ### Patch Changes
