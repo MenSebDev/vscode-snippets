@@ -1,5 +1,5 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "snippets-gtest",
     "displayName": "Snippets GoogleTest",
     "description": "GoogleTest snippets for VS Code.",
