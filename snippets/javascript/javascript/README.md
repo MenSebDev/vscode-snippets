@@ -12,13 +12,10 @@
 
 <p align="center" vertical-align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-javascript">
-    <img alt="VS Code Marketplace" src="https://img.shields.io/visual-studio-marketplace/v/mensebdev.snippets-javascript?label=Marketplace&logo=visualstudiocode" />
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=mensebdev.snippets-javascript">
-    <img alt="Downloads" src="https://img.shields.io/visual-studio-marketplace/d/mensebdev.snippets-javascript?color=blue" />
+    <img alt="VS Code Marketplace" src="https://img.shields.io/badge/Marketplace-Snippets%20JavaScript-blue?logo=visualstudiocode" />
   </a>
   <a href="https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/javascript/javascript/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/mensebdev/snippets-javascript" />
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
   </a>
 </p>
 
