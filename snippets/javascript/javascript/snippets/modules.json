@@ -1,214 +1,214 @@
 {
-    "JavaScript import default": {
-        "prefix": [
-            "imp",
-            "impd"
-        ],
-        "body": [
-            "import ${1:defaultExport} from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a default export from a module."
-    },
-    "JavaScript import named": {
-        "prefix": "impn",
-        "body": [
-            "import { ${1:export} } from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a named export from a module."
-    },
-    "JavaScript import named as alias": {
-        "prefix": "impna",
-        "body": [
-            "import { ${1:export} as ${2:alias} } from \"${3:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a named export with an alias from a module."
-    },
-    "JavaScript import namespace": {
-        "prefix": "impns",
-        "body": [
-            "import * as ${1:name} from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports all exports from a module as a namespace object."
-    },
-    "JavaScript import side effect": {
-        "prefix": "impse",
-        "body": [
-            "import \"${1:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a module for its side effects only."
-    },
-    "JavaScript import default and named": {
-        "prefix": "impdn",
-        "body": [
-            "import ${1:defaultExport}, { ${2:export} } from \"${3:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a default export and named exports from a module."
-    },
-    "JavaScript import default and namespace": {
-        "prefix": "impdns",
-        "body": [
-            "import ${1:defaultExport}, * as ${2:name} from \"${3:module-name}\";",
-            "$0"
-        ],
-        "description": "Imports a default export and all exports as a namespace object from a module."
-    },
-    "JavaScript export default": {
-        "prefix": [
-            "exp",
-            "expd"
-        ],
-        "body": [
-            "export default ${1:expression};",
-            "$0"
-        ],
-        "description": "Exports a default value from the module."
-    },
-    "JavaScript export named": {
-        "prefix": "expn",
-        "body": [
-            "export { ${1:name1} };",
-            "$0"
-        ],
-        "description": "Exports named bindings from the current module."
-    },
-    "JavaScript export named as alias": {
-        "prefix": "expna",
-        "body": [
-            "export { ${1:variable1} as ${2:name1} };",
-            "$0"
-        ],
-        "description": "Exports a binding with an alias from the current module."
-    },
-    "JavaScript export named as default": {
-        "prefix": "expnd",
-        "body": [
-            "export { ${1:name1} as default };",
-            "$0"
-        ],
-        "description": "Exports a named binding as the default export."
-    },
-    "JavaScript export const": {
-        "prefix": "expc",
-        "body": [
-            "export const ${1:name} = ${2:value};",
-            "$0"
-        ],
-        "description": "Exports a const declaration."
-    },
-    "JavaScript export let": {
-        "prefix": "expl",
-        "body": [
-            "export let ${1:name} = ${2:value};",
-            "$0"
-        ],
-        "description": "Exports a let declaration."
-    },
-    "JavaScript export function": {
-        "prefix": "expf",
-        "body": [
-            "export function ${1:functionName}(${2:params}) {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a function declaration."
-    },
-    "JavaScript export default function": {
-        "prefix": "expdf",
-        "body": [
-            "export default function ${1:functionName}(${2:params}) {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a default function declaration."
-    },
-    "JavaScript export class": {
-        "prefix": "expcl",
-        "body": [
-            "export class ${1:ClassName} {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a class declaration."
-    },
-    "JavaScript export default class": {
-        "prefix": "expdcl",
-        "body": [
-            "export default class ${1:ClassName} {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a default class declaration."
-    },
-    "JavaScript export generator function": {
-        "prefix": "expg",
-        "body": [
-            "export function* ${1:generatorFunctionName}(${2:params}) {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a generator function declaration."
-    },
-    "JavaScript export default generator function": {
-        "prefix": "expdg",
-        "body": [
-            "export default function* ${1:generatorFunctionName}(${2:params}) {",
-            "\t$0",
-            "}"
-        ],
-        "description": "Exports a default generator function declaration."
-    },
-    "JavaScript re-export default": {
-        "prefix": "exprd",
-        "body": [
-            "export { default } from \"${1:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports the default export from another module."
-    },
-    "JavaScript re-export default as alias": {
-        "prefix": "exprda",
-        "body": [
-            "export { default as ${1:name1} } from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports the default export from another module with an alias."
-    },
-    "JavaScript re-export named": {
-        "prefix": "exprn",
-        "body": [
-            "export { ${1:name1} } from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports named exports from another module."
-    },
-    "JavaScript re-export named as alias": {
-        "prefix": "exprna",
-        "body": [
-            "export { ${1:import1} as ${2:name1} } from \"${3:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports a named export with an alias from another module."
-    },
-    "JavaScript re-export namespace": {
-        "prefix": "exprns",
-        "body": [
-            "export * as ${1:name} from \"${2:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports all exports from another module as a namespace."
-    },
-    "JavaScript re-export all": {
-        "prefix": "exprall",
-        "body": [
-            "export * from \"${1:module-name}\";",
-            "$0"
-        ],
-        "description": "Re-exports all named exports from another module."
-    }
+  "JavaScript import default": {
+    "prefix": [
+      "imp",
+      "impd"
+    ],
+    "body": [
+      "import ${1:defaultExport} from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a default export from a module."
+  },
+  "JavaScript import named": {
+    "prefix": "impn",
+    "body": [
+      "import { ${1:export} } from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a named export from a module."
+  },
+  "JavaScript import named as alias": {
+    "prefix": "impna",
+    "body": [
+      "import { ${1:export} as ${2:alias} } from \"${3:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a named export with an alias from a module."
+  },
+  "JavaScript import namespace": {
+    "prefix": "impns",
+    "body": [
+      "import * as ${1:name} from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports all exports from a module as a namespace object."
+  },
+  "JavaScript import side effect": {
+    "prefix": "impse",
+    "body": [
+      "import \"${1:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a module for its side effects only."
+  },
+  "JavaScript import default and named": {
+    "prefix": "impdn",
+    "body": [
+      "import ${1:defaultExport}, { ${2:export} } from \"${3:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a default export and named exports from a module."
+  },
+  "JavaScript import default and namespace": {
+    "prefix": "impdns",
+    "body": [
+      "import ${1:defaultExport}, * as ${2:name} from \"${3:module-name}\";",
+      "$0"
+    ],
+    "description": "Imports a default export and all exports as a namespace object from a module."
+  },
+  "JavaScript export default": {
+    "prefix": [
+      "exp",
+      "expd"
+    ],
+    "body": [
+      "export default ${1:expression};",
+      "$0"
+    ],
+    "description": "Exports a default value from the module."
+  },
+  "JavaScript export named": {
+    "prefix": "expn",
+    "body": [
+      "export { ${1:name1} };",
+      "$0"
+    ],
+    "description": "Exports named bindings from the current module."
+  },
+  "JavaScript export named as alias": {
+    "prefix": "expna",
+    "body": [
+      "export { ${1:variable1} as ${2:name1} };",
+      "$0"
+    ],
+    "description": "Exports a binding with an alias from the current module."
+  },
+  "JavaScript export named as default": {
+    "prefix": "expnd",
+    "body": [
+      "export { ${1:name1} as default };",
+      "$0"
+    ],
+    "description": "Exports a named binding as the default export."
+  },
+  "JavaScript export const": {
+    "prefix": "expc",
+    "body": [
+      "export const ${1:name} = ${2:value};",
+      "$0"
+    ],
+    "description": "Exports a const declaration."
+  },
+  "JavaScript export let": {
+    "prefix": "expl",
+    "body": [
+      "export let ${1:name} = ${2:value};",
+      "$0"
+    ],
+    "description": "Exports a let declaration."
+  },
+  "JavaScript export function": {
+    "prefix": "expf",
+    "body": [
+      "export function ${1:functionName}(${2:params}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a function declaration."
+  },
+  "JavaScript export default function": {
+    "prefix": "expdf",
+    "body": [
+      "export default function ${1:functionName}(${2:params}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a default function declaration."
+  },
+  "JavaScript export class": {
+    "prefix": "expcl",
+    "body": [
+      "export class ${1:ClassName} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a class declaration."
+  },
+  "JavaScript export default class": {
+    "prefix": "expdcl",
+    "body": [
+      "export default class ${1:ClassName} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a default class declaration."
+  },
+  "JavaScript export generator function": {
+    "prefix": "expg",
+    "body": [
+      "export function* ${1:generatorFunctionName}(${2:params}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a generator function declaration."
+  },
+  "JavaScript export default generator function": {
+    "prefix": "expdg",
+    "body": [
+      "export default function* ${1:generatorFunctionName}(${2:params}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Exports a default generator function declaration."
+  },
+  "JavaScript re-export default": {
+    "prefix": "exprd",
+    "body": [
+      "export { default } from \"${1:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports the default export from another module."
+  },
+  "JavaScript re-export default as alias": {
+    "prefix": "exprda",
+    "body": [
+      "export { default as ${1:name1} } from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports the default export from another module with an alias."
+  },
+  "JavaScript re-export named": {
+    "prefix": "exprn",
+    "body": [
+      "export { ${1:name1} } from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports named exports from another module."
+  },
+  "JavaScript re-export named as alias": {
+    "prefix": "exprna",
+    "body": [
+      "export { ${1:import1} as ${2:name1} } from \"${3:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports a named export with an alias from another module."
+  },
+  "JavaScript re-export namespace": {
+    "prefix": "exprns",
+    "body": [
+      "export * as ${1:name} from \"${2:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports all exports from another module as a namespace."
+  },
+  "JavaScript re-export all": {
+    "prefix": "exprall",
+    "body": [
+      "export * from \"${1:module-name}\";",
+      "$0"
+    ],
+    "description": "Re-exports all named exports from another module."
+  }
 }

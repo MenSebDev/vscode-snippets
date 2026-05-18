@@ -1,83 +1,83 @@
 {
-    "version": "1.0.1",
-    "name": "snippets-javascript",
-    "displayName": "Snippets JavaScript",
-    "description": "JavaScript snippets for VS Code.",
-    "publisher": "mensebdev",
-    "license": "MIT",
-    "pricing": "Free",
-    "author": {
-        "name": "Sébastien Menard",
-        "email": "contact@menseb.dev",
-        "url": "https://menseb.dev/"
-    },
-    "homepage": "https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/js/js/README.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/MenSebDev/vscode-snippets.git",
-        "directory": "snippets/js/js"
-    },
-    "bugs": {
-        "email": "contact@menseb.dev",
-        "url": "https://github.com/MenSebDev/vscode-snippets/issues"
-    },
-    "scripts": {
-        "vscode:package": "vsce package",
-        "vscode:publish": "vsce publish --skip-duplicate --pat $VSCE_PAT"
-    },
-    "icon": "logo.png",
-    "files": [
-        "CHANGELOG.md",
-        "LICENSE",
-        "logo.png",
-        "snippets/**/*.json"
-    ],
-    "galleryBanner": {
-        "color": "#1e1e1e",
-        "theme": "dark"
-    },
-    "engines": {
-        "vscode": "^1.8.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "keywords": [
-        "vscode",
-        "snippets",
-        "js",
-        "javascript"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "astro",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "svelte",
-                "path": "./snippets/modules.json"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/modules.json"
-            }
-        ]
-    }
+  "version": "1.0.1",
+  "name": "snippets-javascript",
+  "displayName": "Snippets JavaScript",
+  "description": "JavaScript snippets for VS Code.",
+  "publisher": "mensebdev",
+  "license": "MIT",
+  "pricing": "Free",
+  "author": {
+    "name": "Sébastien Menard",
+    "email": "contact@menseb.dev",
+    "url": "https://menseb.dev/"
+  },
+  "homepage": "https://github.com/MenSebDev/vscode-snippets/blob/main/snippets/js/js/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MenSebDev/vscode-snippets.git",
+    "directory": "snippets/js/js"
+  },
+  "bugs": {
+    "email": "contact@menseb.dev",
+    "url": "https://github.com/MenSebDev/vscode-snippets/issues"
+  },
+  "scripts": {
+    "vscode:package": "vsce package",
+    "vscode:publish": "vsce publish --skip-duplicate --pat $VSCE_PAT"
+  },
+  "icon": "logo.png",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "logo.png",
+    "snippets/**/*.json"
+  ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "vscode",
+    "snippets",
+    "js",
+    "javascript"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "astro",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/modules.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/modules.json"
+      }
+    ]
+  }
 }

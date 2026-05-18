@@ -14,10 +14,9 @@
     "programming"
   ],
   "scripts": {
-    "changeset": "changeset",
+    "vscode:change": "changeset",
     "vscode:package": "pnpm -r --filter \"./snippets/*/*\" run --if-present vscode:package",
     "vscode:publish": "pnpm -r --filter \"./snippets/*/*\" run --if-present vscode:publish",
-    "vscode:release": "pnpm run vscode:publish",
     "vscode:version": "changeset version",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
