@@ -118,11 +118,11 @@ Update extension README and logo assets.
 
 ## Extension lifecycle
 
-1. Checkout or Switch to `dev` branch.
+1. Checkout to a new branch.
 2. Modify one extension.
 3. Run `pnpm run vscode:change`.
 4. Commit the generated `.changeset/*.md` file with the modification.
-5. Merge the `dev` branch into `main`.
+5. Merge the new branch into `main`.
 6. GitHub Actions creates a version PR using the `release` workflow.
 7. The version PR:
    - bumps the package version
@@ -199,10 +199,10 @@ Each extension publishes with `vsce publish --skip-duplicate`, so already-publis
 
 ## Development workflow
 
-1. Checkout or switch to the development branch.
+1. Checkout to a new branch.
 
     ```bash
-    git checkout dev
+    git checkout -b <branch>
     ```
 
 2. Modify the extension files.
@@ -226,10 +226,12 @@ Each extension publishes with `vsce publish --skip-duplicate`, so already-publis
     ```bash
     git add .
     git commit -m "fix(cpp/gtest): update snippet cursor positions"
-    git push origin dev
+    git push origin <branch>
     ```
 
     The generated `.changeset/*.md` file must be committed. It is temporary, but it is required for the release process.
+
+5. Merge the new branch into main.
 
 ## Marketplace token
 
